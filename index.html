@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rango de Movimiento</title>
-    <style>*{box-sizing:border-box;font-family:system-ui,sans-serif}body{color:#f1f1f1;text-align:center;background:#1e1e24;margin:0;padding:16px}h3{margin:0 0 10px;font-size:18px}#status{color:#a0a0a0;margin-bottom:16px;font-size:13px}#dm-panel{background:#272733;border:1px solid #3c3c4d;border-radius:8px;padding:16px}.combat-group{cursor:pointer;background:#323242;border-radius:6px;justify-content:center;align-items:center;gap:12px;margin-bottom:16px;padding:12px;display:flex}input[type=checkbox]{cursor:pointer;accent-color:#4f46e5;width:24px;height:24px}.combat-group label{cursor:pointer;font-size:16px}.input-group{justify-content:center;align-items:center;gap:8px;margin-bottom:16px;display:flex}.input-group label{font-size:15px}input[type=number]{color:#fff;text-align:center;background:#191920;border:1px solid #444;border-radius:4px;width:70px;padding:8px;font-size:16px;font-weight:700}button{color:#fff;cursor:pointer;background:#4f46e5;border:none;border-radius:4px;width:100%;padding:12px;font-size:15px;font-weight:700;transition:background .2s}button:hover{background:#4338ca}</style>
-    <script type="module" crossorigin src="./assets/index-CdwYCYbn.js"></script>
+    <style>*{box-sizing:border-box;font-family:system-ui,sans-serif}body{color:#f1f1f1;text-align:center;background:#1e1e24;margin:0;padding:16px}h3{margin:0 0 10px;font-size:18px}#status{color:#a0a0a0;margin-bottom:16px;font-size:13px}#dm-panel{background:#272733;border:1px solid #3c3c4d;border-radius:8px;padding:16px}.combat-group{cursor:pointer;background:#323242;border-radius:6px;justify-content:center;align-items:center;gap:12px;margin-bottom:16px;padding:12px;display:flex}input[type=checkbox]{cursor:pointer;accent-color:#4f46e5;width:24px;height:24px}.combat-group label{cursor:pointer;font-size:16px}.input-group{justify-content:space-between;align-items:center;margin-bottom:12px;padding:0 10px;display:flex}.input-group label{font-size:15px}input[type=number]{color:#fff;text-align:center;background:#191920;border:1px solid #444;border-radius:4px;width:70px;padding:8px;font-size:16px;font-weight:700}input[type=color]{cursor:pointer;background:#191920;border:1px solid #444;border-radius:4px;width:70px;height:36px;padding:2px}button{color:#fff;cursor:pointer;background:#4f46e5;border:none;border-radius:4px;width:100%;margin-top:10px;padding:12px;font-size:15px;font-weight:700;transition:background .2s}button:hover{background:#4338ca}</style>
+    <script type="module" crossorigin src="./assets/index-BM8Uz5jJ.js"></script>
   </head>
   <body>
     <h3>Rango de Movimiento</h3>
     <div id="status">Selecciona un token</div>
 
     <div id="dm-panel" style="display: none;">
-      <!-- Lo envolvemos en un label para que al hacer clic en el fondo también funcione -->
       <label class="combat-group">
         <input type="checkbox" id="combat-toggle" checked />
         <strong>Activar en Combate</strong>
@@ -22,7 +21,13 @@
         <label>Velocidad (pies):</label>
         <input type="number" id="speed-input" value="30" step="5" min="0" />
       </div>
-      <button id="save-btn">Guardar Velocidad</button>
+
+      <div class="input-group">
+        <label>Color del Grid:</label>
+        <input type="color" id="color-input" value="#ff0000" />
+      </div>
+
+      <button id="save-btn">Guardar Ajustes</button>
     </div>
 
   </body>
