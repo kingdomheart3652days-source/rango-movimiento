@@ -4,8 +4,8 @@
   "manifest_version": 1,
   "action": {
     "title": "Configurar Velocidad",
-    "icon": "./icon.svg", 
-    "popover": "./index.html",
+    "icon": "https://kingdomheart3652days-source.github.io/rango-movimiento/icon.svg", 
+    "popover": "https://kingdomheart3652days-source.github.io/rango-movimiento/index.html",
     "width": 320,
     "height": 280
   }
